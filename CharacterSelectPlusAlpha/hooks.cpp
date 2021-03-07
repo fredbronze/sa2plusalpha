@@ -1,4 +1,3 @@
-#include "pch.h"
 #include "SA2ModLoader.h"
 #include "TikalRadar.h"
 #include "IniFile.hpp"
