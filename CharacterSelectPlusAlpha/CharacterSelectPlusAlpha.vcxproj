@@ -155,11 +155,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="DreamcastMusic.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="TikalRadar.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="DreamcastMusic.cpp" />
     <ClCompile Include="hooks.cpp" />
     <ClCompile Include="TikalRadar.cpp" />
   </ItemGroup>

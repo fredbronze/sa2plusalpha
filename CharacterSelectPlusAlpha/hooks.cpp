@@ -1,5 +1,6 @@
 #include "SA2ModLoader.h"
 #include "TikalRadar.h"
+#include "DreamcastMusic.h"
 #include "IniFile.hpp"
 using std::string;
 
@@ -12,6 +13,7 @@ extern "C"
 		const IniFile* settings = new IniFile(std::string(path) + "\\config.ini");
 
 		if (settings->getBool("Gameplay", "TikalRadar", true)) InitTikalRadar();
+		if (settings->getBool("Presentation", "DreamcastMusic", true)) InitDreamcastMusic();
 
 		delete settings;
 	}

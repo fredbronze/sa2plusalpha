@@ -6,5 +6,10 @@
 				<HelpText>Enables Tikal's radar in 1P mode (no reaction outside of yellow range).</HelpText>
 			</Property>
 		</Group>
+		<Group name="Presentation" display="Presentation">
+			<Property name="DreamcastMusic" display="Dreamcast Music" type="bool" defaultvalue="true">
+				<HelpText>Restores the original BGM assignments for Chao Lobby and Chao Race. Bulletin Board music is used for Chao Transporter.</HelpText>
+			</Property>
+		</Group>
 	</Groups>
 </ConfigSchema>

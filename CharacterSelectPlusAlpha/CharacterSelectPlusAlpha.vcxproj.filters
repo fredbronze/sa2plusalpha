@@ -21,6 +21,9 @@
     <ClInclude Include="TikalRadar.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DreamcastMusic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -30,6 +33,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TikalRadar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DreamcastMusic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
