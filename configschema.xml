@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ConfigSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonicretro.org">
+	<Groups>
+		<Group name="Gameplay" display="Gameplay">
+			<Property name="TikalRadar" display="Tikal Radar" type="bool" defaultvalue="true">
+				<HelpText>Enables Tikal's radar in 1P mode (no reaction outside of yellow range).</HelpText>
+			</Property>
+		</Group>
+	</Groups>
+</ConfigSchema>

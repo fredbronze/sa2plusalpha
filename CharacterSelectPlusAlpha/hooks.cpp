@@ -1,5 +1,8 @@
 #include "pch.h"
 #include "SA2ModLoader.h"
+#include "TikalRadar.h"
+#include "IniFile.hpp"
+using std::string;
 
 extern "C"
 {
@@ -7,8 +10,11 @@ extern "C"
 
 	__declspec(dllexport) void __cdecl Init(const char* path, const HelperFunctions& helperFunctions)
 	{
-		// Executed at startup, contains helperFunctions and the path to your mod (useful for getting the config file.)
-		// This is where we override functions, replace static data, etc.
+		const IniFile* settings = new IniFile(std::string(path) + "\\config.ini");
+
+		if (settings->getBool("Gameplay", "TikalRadar", true)) InitTikalRadar();
+
+		delete settings;
 	}
 
 	__declspec(dllexport) void __cdecl OnFrame()
