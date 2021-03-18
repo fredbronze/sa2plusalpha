@@ -2,23 +2,23 @@
 <ConfigSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonicretro.org">
 	<Groups>
 		<Group name="Gameplay" display="Gameplay">
-			<Property name="TikalRadar" display="Tikal Radar" type="YesNo">
+			<Property name="TikalRadar" display="Tikal Radar" type="OnOff">
 				<HelpText>Enables Tikal's radar in 1P mode (no reaction outside of yellow range).</HelpText>
 			</Property>
 		</Group>
 		<Group name="Presentation" display="Presentation">
-			<Property name="InGameDialogue" display="Disable In-Game Dialogue" type="YesNo">
+			<Property name="InGameDialogue" display="Disable In-Game Dialogue" type="OnOff">
 				<HelpText>Disables the radio dialogue in Security Hall, Route 101/280 and Last Episode outside of story mode.</HelpText>
 			</Property>
-			<Property name="DreamcastMusic" display="Dreamcast Music" type="YesNo">
+			<Property name="DreamcastMusic" display="Dreamcast Music" type="OnOff">
 				<HelpText>Restores the original BGM assignments for Chao Lobby and Chao Race. Bulletin Board music is used for Chao Transporter.</HelpText>
 			</Property>
 		</Group>
 	</Groups>
 	<Enums>
-		<Enum name="YesNo">
-			<EnumMember name="0" display="Yes" />
-			<EnumMember name="1" display="No" />
+		<Enum name="OnOff">
+			<EnumMember name="0" display="On" />
+			<EnumMember name="1" display="Off" />
 		</Enum>
 	</Enums>
 </ConfigSchema>
