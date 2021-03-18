@@ -96,7 +96,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalDependencies>..\bin\ModLoaderCommon.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>..\bin\libmodutils.lib;..\bin\ModLoaderCommon.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -117,7 +117,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalDependencies>..\bin\ModLoaderCommon.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>..\bin\libmodutils.lib;..\bin\ModLoaderCommon.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -158,12 +158,14 @@
     <ClInclude Include="DreamcastMusic.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="TikalRadar.h" />
+    <ClInclude Include="utils.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="DreamcastMusic.cpp" />
     <ClCompile Include="hooks.cpp" />
     <ClCompile Include="TikalRadar.cpp" />
+    <ClCompile Include="utils.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,10 +1,5 @@
 #include "SA2ModLoader.h"
-#include <string>
-using std::string;
-
-void WriteString(int writeAddress, string data) {
-	WriteData((void*)writeAddress, &data, data.size() + 1);
-}
+#include "utils.h"
 
 void InitDreamcastMusic(int setting)
 {
