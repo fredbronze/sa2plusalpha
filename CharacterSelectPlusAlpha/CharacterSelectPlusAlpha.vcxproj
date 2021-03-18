@@ -156,6 +156,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="DreamcastMusic.h" />
+    <ClInclude Include="InGameDialogue.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="TikalRadar.h" />
     <ClInclude Include="utils.h" />
@@ -163,6 +164,7 @@
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="DreamcastMusic.cpp" />
+    <ClCompile Include="InGameDialogue.cpp" />
     <ClCompile Include="hooks.cpp" />
     <ClCompile Include="TikalRadar.cpp" />
     <ClCompile Include="utils.cpp" />
