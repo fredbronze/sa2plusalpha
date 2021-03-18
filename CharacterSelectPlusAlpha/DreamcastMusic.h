@@ -1,3 +1,3 @@
 #pragma once
 
-void InitDreamcastMusic();
+void InitDreamcastMusic(int setting);

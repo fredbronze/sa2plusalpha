@@ -1,3 +1,3 @@
 #pragma once
 
-void InitTikalRadar();
+void InitTikalRadar(int setting);

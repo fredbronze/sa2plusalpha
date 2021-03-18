@@ -29,8 +29,10 @@ void TikalRadarSound()
 	}
 }
 
-void InitTikalRadar()
+void InitTikalRadar(int setting)
 {
+	if (setting != 0) return;
+
 	WriteJump((void*)0x739DC9, TikalRadarSound);
 	WriteCall((void*)0x73A7F5, TikalRadarDisplay);
 }

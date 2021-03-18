@@ -11,8 +11,8 @@ extern "C"
 	{
 		const IniFile* settings = new IniFile(std::string(path) + "\\config.ini");
 
-		if (settings->getBool("Gameplay", "TikalRadar", true)) InitTikalRadar();
-		if (settings->getBool("Presentation", "DreamcastMusic", true)) InitDreamcastMusic();
+		InitDreamcastMusic(settings->getInt("Presentation", "DreamcastMusic"));
+		InitTikalRadar(settings->getInt("Gameplay", "TikalRadar"));
 
 		delete settings;
 	}

@@ -6,8 +6,10 @@ void WriteString(int writeAddress, string data) {
 	WriteData((void*)writeAddress, &data, data.size() + 1);
 }
 
-void InitDreamcastMusic()
+void InitDreamcastMusic(int setting)
 {
+	if (setting != 0) return;
+
 	WriteString(0x1314018, MusicList[57]); // chao_hall.adx -> chao_l_m.adx
 	WriteString(0x1313798, MusicList[70]); // chao_l_m.adx  -> c_btl_cv.adx
 	WriteString(0x1313908, MusicList[63]); // c_btl_cv.adx  -> CHAO_R_E.ADX
