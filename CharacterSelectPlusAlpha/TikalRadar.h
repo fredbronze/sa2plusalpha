@@ -1,3 +1,5 @@
 #pragma once
-
-void InitTikalRadar(int setting);
+namespace TikalRadar
+{
+	void Init(int setting);
+}

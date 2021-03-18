@@ -1,3 +1,5 @@
 #pragma once
-
-void InitInGameDialogue(int setting);
+namespace InGameDialogue
+{
+	void Init(int setting);
+}

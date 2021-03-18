@@ -1,38 +1,42 @@
 #include "SA2ModLoader.h"
 
-void TikalRadarDisplay()
+namespace TikalRadar
 {
-	if (MainCharObj2[0]->CharID2 != Characters_Tikal) __asm
+	void TikalRadarDisplay()
 	{
-		fstp    st
-		lea     ecx, [esi + 10h]
+		if (MainCharObj2[0]->CharID2 != Characters_Tikal) __asm
+		{
+			fstp    st
+			lea     ecx, [esi + 10h]
+		}
+		else __asm
+		{
+			fstp    st
+			lea     ecx, [esi + 4]
+		}
 	}
-	else __asm
-	{
-		fstp    st
-		lea     ecx, [esi + 4]
-	}
-}
 
-void TikalRadarSound()
-{
-	if ((FrameCountIngame & 0x3F) == 0 && MainCharObj2[0]->CharID2 != Characters_Tikal) __asm
+	void TikalRadarSound()
 	{
-		fstp    st
-		push    0x739DEA
-		ret
+		if ((FrameCountIngame & 0x3F) == 0 && MainCharObj2[0]->CharID2 != Characters_Tikal) __asm
+		{
+			fstp    st
+			push    0x739DEA
+			ret
+		}
+		else __asm
+		{
+			push    0x739E58
+			ret
+		}
 	}
-	else __asm
+
+	void Init(int setting)
 	{
-		push    0x739E58
-		ret
+		if (setting != 0) return;
+
+		WriteJump((void*)0x739DC9, TikalRadarSound);
+		WriteCall((void*)0x73A7F5, TikalRadarDisplay);
 	}
-}
 
-void InitTikalRadar(int setting)
-{
-	if (setting != 0) return;
-
-	WriteJump((void*)0x739DC9, TikalRadarSound);
-	WriteCall((void*)0x73A7F5, TikalRadarDisplay);
 }

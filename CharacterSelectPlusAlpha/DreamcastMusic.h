@@ -1,3 +1,5 @@
 #pragma once
-
-void InitDreamcastMusic(int setting);
+namespace DreamcastMusic
+{
+	void Init(int setting);
+}
