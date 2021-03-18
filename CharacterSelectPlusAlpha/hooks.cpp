@@ -1,8 +1,7 @@
 #include "SA2ModLoader.h"
-#include "TikalRadar.h"
-#include "DreamcastMusic.h"
 #include "IniFile.hpp"
-using std::string;
+#include "DreamcastMusic.h"
+#include "TikalRadar.h"
 
 extern "C"
 {

@@ -5,12 +5,12 @@ void TikalRadarDisplay()
 	if (MainCharObj2[0]->CharID2 != Characters_Tikal) __asm
 	{
 		fstp    st
-		lea	    ecx, [esi + 10h]
+		lea     ecx, [esi + 10h]
 	}
 	else __asm
 	{
 		fstp    st
-		lea	    ecx, [esi + 4]
+		lea     ecx, [esi + 4]
 	}
 }
 
