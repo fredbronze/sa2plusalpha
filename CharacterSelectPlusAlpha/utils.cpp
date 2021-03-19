@@ -9,18 +9,12 @@ BOOL WriteString(int writeAddress, std::string data)
 
 void JumpTo(int destination)
 {
-	__asm
-	{
-		push    destination
-	}
+	__asm   push    destination
 }
 
 void PopBytes(int number)
 {
-	__asm
-	{
-		add     esp, number
-	}
+	__asm   add     esp, number
 }
 
 int addr(Trampoline* trampoline)

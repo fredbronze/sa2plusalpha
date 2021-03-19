@@ -3,15 +3,15 @@
 	<Groups>
 		<Group name="Gameplay" display="Gameplay">
 			<Property name="TikalRadar" display="Tikal Radar" type="OnOff">
-				<HelpText>Enables Tikal's radar in 1P mode (no reaction outside of yellow range).</HelpText>
+				<HelpText>Enable Tikal's radar in 1P mode (no reaction outside of yellow range).</HelpText>
 			</Property>
 		</Group>
 		<Group name="Presentation" display="Presentation">
 			<Property name="InGameDialogue" display="Disable In-Game Dialogue" type="OnOff">
-				<HelpText>Disables the radio dialogue in Security Hall, Route 101/280 and Last Episode outside of story mode.</HelpText>
+				<HelpText>Disable the radio dialogue in Security Hall, Route 101/280 and Last Episode outside of story mode.</HelpText>
 			</Property>
 			<Property name="DreamcastMusic" display="Dreamcast Music" type="OnOff">
-				<HelpText>Restores the original BGM assignments for Chao Lobby and Chao Race. Bulletin Board music is used for Chao Transporter.</HelpText>
+				<HelpText>Restore the original BGM assignments for Chao Lobby and Chao Race. Bulletin Board music is used for Chao Transporter.</HelpText>
 			</Property>
 		</Group>
 	</Groups>
