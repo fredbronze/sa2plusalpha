@@ -37,6 +37,7 @@ Debug/
 Release/*.exp
 Release/*.lib
 Release/*.pdb
+Release/gd_PC/ADX/
 CharacterSelectPlusAlpha/Release/
 
 # Visual Studio 2015/2017 cache/options directory

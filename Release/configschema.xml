@@ -7,6 +7,9 @@
 			</Property>
 		</Group>
 		<Group name="Presentation" display="Presentation">
+			<Property name="CityEscapeMusic" display="City Escape Instumental" type="CityEscapeMusic">
+				<HelpText>Use the instrumental version of City Escape's BGM when playing as a character other than Sonic.</HelpText>
+			</Property>
 			<Property name="InGameDialogue" display="Disable In-Game Dialogue" type="OnOff">
 				<HelpText>Disable the radio dialogue in Security Hall, Route 101/280 and Last Episode outside of story mode.</HelpText>
 			</Property>
@@ -19,6 +22,13 @@
 		<Enum name="OnOff">
 			<EnumMember name="0" display="On" />
 			<EnumMember name="1" display="Off" />
+		</Enum>
+		<Enum name="CityEscapeMusic">
+			<EnumMember name="0" display="On" />
+			<EnumMember name="1" display="Also in 2P mode" />
+			<EnumMember name="2" display="Only in 2P mode" />
+			<EnumMember name="3" display="Always" />
+			<EnumMember name="4" display="Off" />
 		</Enum>
 	</Enums>
 </ConfigSchema>

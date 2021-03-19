@@ -1,6 +1,9 @@
 #include "Trampoline.h"
 #include <string>
 
+static const char* c_escap1_adx = (char*)0x8BA098;
+static const char* c_escap3_adx = (char*)0x8BA078;
+static short &CheckpointFlag = *(short*)0x1934B8A;
 static byte &CurrentStory = *(byte*)0x1DEB320;
 
 BOOL WriteString(int writeAddress, std::string data);
