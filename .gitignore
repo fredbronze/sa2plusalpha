@@ -37,6 +37,7 @@ Debug/
 Release/*.exp
 Release/*.lib
 Release/*.pdb
+Release/config.ini
 Release/gd_PC/ADX/
 CharacterSelectPlusAlpha/Release/
 

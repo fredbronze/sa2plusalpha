@@ -1,5 +1,5 @@
 #pragma once
-namespace DreamcastMusic
+namespace ChaoMusic
 {
 	void Init(int setting);
 }

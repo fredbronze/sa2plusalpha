@@ -1,7 +1,7 @@
 #include "SA2ModLoader.h"
 #include "utils.h"
 
-namespace DreamcastMusic
+namespace ChaoMusic
 {
 	void Init(int setting)
 	{

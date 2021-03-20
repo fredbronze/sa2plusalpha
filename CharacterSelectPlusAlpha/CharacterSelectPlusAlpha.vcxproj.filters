@@ -21,7 +21,7 @@
     <ClInclude Include="TikalRadar.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DreamcastMusic.h">
+    <ClInclude Include="ChaoMusic.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="InGameDialogue.h">
@@ -44,7 +44,7 @@
     <ClCompile Include="TikalRadar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DreamcastMusic.cpp">
+    <ClCompile Include="ChaoMusic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="InGameDialogue.cpp">

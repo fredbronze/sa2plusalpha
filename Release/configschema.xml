@@ -13,7 +13,7 @@
 			<Property name="InGameDialogue" display="Disable In-Game Dialogue" type="OnOff">
 				<HelpText>Disable the radio dialogue in Security Hall, Route 101/280 and Last Episode outside of story mode.</HelpText>
 			</Property>
-			<Property name="DreamcastMusic" display="Dreamcast Music" type="OnOff">
+			<Property name="ChaoMusic" display="Dreamcast Chao Music" type="OnOff">
 				<HelpText>Restore the original BGM assignments for Chao Lobby and Chao Race. Bulletin Board music is used for Chao Transporter.</HelpText>
 			</Property>
 		</Group>

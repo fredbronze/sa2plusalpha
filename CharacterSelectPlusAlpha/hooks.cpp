@@ -1,7 +1,7 @@
 #include "SA2ModLoader.h"
 #include "IniFile.hpp"
+#include "ChaoMusic.h"
 #include "CityEscapeMusic.h"
-#include "DreamcastMusic.h"
 #include "InGameDialogue.h"
 #include "TikalRadar.h"
 
@@ -13,8 +13,8 @@ extern "C"
 	{
 		const IniFile* settings = new IniFile(std::string(path) + "\\config.ini");
 
+		ChaoMusic::Init(settings->getInt("Presentation", "ChaoMusic"));
 		CityEscapeMusic::Init(settings->getInt("Presentation", "CityEscapeMusic"));
-		DreamcastMusic::Init(settings->getInt("Presentation", "DreamcastMusic"));
 		InGameDialogue::Init(settings->getInt("Presentation", "InGameDialogue"));
 		TikalRadar::Init(settings->getInt("Gameplay", "TikalRadar"));
 
