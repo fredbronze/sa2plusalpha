@@ -1,5 +1,6 @@
 #include "SA2ModLoader.h"
 #include "IniFile.hpp"
+#include "AltUpgrades.h"
 #include "ChaoMusic.h"
 #include "CityEscapeMusic.h"
 #include "InGameDialogue.h"
@@ -13,6 +14,7 @@ extern "C"
 	{
 		const IniFile* settings = new IniFile(std::string(path) + "\\config.ini");
 
+		AltUpgrades::Init(settings->getInt("Gameplay", "AltUpgrades"));
 		ChaoMusic::Init(settings->getInt("Presentation", "ChaoMusic"));
 		CityEscapeMusic::Init(settings->getInt("Presentation", "CityEscapeMusic"));
 		InGameDialogue::Init(settings->getInt("Presentation", "InGameDialogue"));

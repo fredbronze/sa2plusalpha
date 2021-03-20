@@ -2,6 +2,9 @@
 <ConfigSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonicretro.org">
 	<Groups>
 		<Group name="Gameplay" display="Gameplay">
+			<Property name="AltUpgrades" display="Tikal Drowns" type="OnOff">
+				<HelpText>Allow Tikal to drown even after obtaining Knuckles' Air Necklace (counteracting Chaos 0, who can never drown).</HelpText>
+			</Property>
 			<Property name="TikalRadar" display="Tikal Radar" type="OnOff">
 				<HelpText>Enable Tikal's radar in 1P mode (no reaction outside of yellow range).</HelpText>
 			</Property>

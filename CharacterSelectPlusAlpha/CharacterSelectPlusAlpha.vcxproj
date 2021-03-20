@@ -160,6 +160,7 @@
     <ClInclude Include="InGameDialogue.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="TikalRadar.h" />
+    <ClInclude Include="AltUpgrades.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>
   <ItemGroup>
@@ -169,6 +170,7 @@
     <ClCompile Include="InGameDialogue.cpp" />
     <ClCompile Include="hooks.cpp" />
     <ClCompile Include="TikalRadar.cpp" />
+    <ClCompile Include="AltUpgrades.cpp" />
     <ClCompile Include="utils.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
