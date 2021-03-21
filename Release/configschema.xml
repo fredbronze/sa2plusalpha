@@ -10,6 +10,9 @@
 			</Property>
 		</Group>
 		<Group name="Presentation" display="Presentation">
+			<Property name="AltFixes" display="Better Chaos" type="OnOff">
+				<HelpText>Make Chaos 0 spawn glowy particle effects from his fists rather than his feet.</HelpText>
+			</Property>
 			<Property name="CityEscapeMusic" display="City Escape Instumental" type="CityEscapeMusic">
 				<HelpText>Use the instrumental version of City Escape's BGM when playing as a character other than Sonic.</HelpText>
 			</Property>
