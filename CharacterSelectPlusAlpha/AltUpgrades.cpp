@@ -17,4 +17,5 @@ namespace AltUpgrades
 
 		WriteJump((void*)0x459FA7, TikalDrown_Detour);
 	}
+
 }
