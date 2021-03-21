@@ -2,6 +2,9 @@
 <ConfigSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonicretro.org">
 	<Groups>
 		<Group name="Gameplay" display="Gameplay">
+			<Property name="ManualDig" display="Manual Digging" type="OnOff">
+				<HelpText>Prevent the Drill Claw/Drill Drive moves from actually digging unless the player is holding the action button when touching the floor.</HelpText>
+			</Property>
 			<Property name="AltUpgrades" display="Tikal Drowns" type="OnOff">
 				<HelpText>Allow Tikal to drown even after obtaining Knuckles' Air Necklace (counteracting Chaos 0, who can never drown).</HelpText>
 			</Property>

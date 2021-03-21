@@ -160,6 +160,7 @@
     <ClInclude Include="ChaoMusic.h" />
     <ClInclude Include="InGameDialogue.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="ManualDig.h" />
     <ClInclude Include="TikalRadar.h" />
     <ClInclude Include="AltUpgrades.h" />
     <ClInclude Include="utils.h" />
@@ -171,6 +172,7 @@
     <ClCompile Include="ChaoMusic.cpp" />
     <ClCompile Include="InGameDialogue.cpp" />
     <ClCompile Include="hooks.cpp" />
+    <ClCompile Include="ManualDig.cpp" />
     <ClCompile Include="TikalRadar.cpp" />
     <ClCompile Include="AltUpgrades.cpp" />
     <ClCompile Include="utils.cpp" />

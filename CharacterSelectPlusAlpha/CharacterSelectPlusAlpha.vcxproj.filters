@@ -39,6 +39,9 @@
     <ClInclude Include="AltFixes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ManualDig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -66,6 +69,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="AltFixes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ManualDig.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
