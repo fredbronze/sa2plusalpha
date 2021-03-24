@@ -16,6 +16,9 @@
 			<Property name="AltFixes" display="Better Chaos" type="OnOff">
 				<HelpText>Make Chaos 0 spawn glowy particle effects from his fists rather than his feet.</HelpText>
 			</Property>
+			<Property name="LivesIcons" display="Better Lives Icons" type="OnOff">
+				<HelpText>Replace the 2P icons with AI-upscaled versions, and display 2P characters in 1-Up boxes by loading a different texture (based on the HD GUI mod).</HelpText>
+			</Property>
 			<Property name="CityEscapeMusic" display="City Escape Instumental" type="CityEscapeMusic">
 				<HelpText>Use the instrumental version of City Escape's BGM when playing as a character other than Sonic.</HelpText>
 			</Property>

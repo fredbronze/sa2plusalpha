@@ -5,6 +5,7 @@
 #include "ChaoMusic.h"
 #include "CityEscapeMusic.h"
 #include "InGameDialogue.h"
+#include "LivesIcons.h"
 #include "ManualDig.h"
 #include "TikalRadar.h"
 
@@ -21,6 +22,7 @@ extern "C"
 		ChaoMusic::Init(settings->getInt("Presentation", "ChaoMusic"));
 		CityEscapeMusic::Init(settings->getInt("Presentation", "CityEscapeMusic"));
 		InGameDialogue::Init(settings->getInt("Presentation", "InGameDialogue"));
+		LivesIcons::Init(settings->getInt("Presentation", "LivesIcons"), helperFunctions);
 		ManualDig::Init(settings->getInt("Gameplay", "ManualDig"));
 		TikalRadar::Init(settings->getInt("Gameplay", "TikalRadar"));
 
