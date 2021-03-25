@@ -14,10 +14,13 @@ namespace LivesIcons
 		return LoadTextureList(filename, texlist);
 	}
 
-	void Init(int setting, const HelperFunctions& helperFunctions)
+	void Init1Ups()
 	{
-		if (setting != 0) return;
+		WriteCall((void*)0x44C7C9, LoadTextureList_Detour);
+	}
 
+	void InitIcons(const HelperFunctions& helperFunctions)
+	{
 		const std::string zanki[num_zanki] =
 		{
 			std::string(zanki_amy),
@@ -36,7 +39,16 @@ namespace LivesIcons
 			auto dest = "resource\\gd_PC\\PRS\\" + zanki[i] + "_3x.pak";
 			helperFunctions.ReplaceFile(src.c_str(), dest.c_str());
 		}
-
-		WriteCall((void*)0x44C7C9, LoadTextureList_Detour);
 	}
+
+	void Init(int setting, const HelperFunctions& fn)
+	{
+		switch (setting)
+		{
+			case 0:        Init1Ups();    // On
+			case 1: return InitIcons(fn); // Only the lives icons
+			case 2: return Init1Ups();    // Only the 1-up boxes
+		}
+	}
+
 }
