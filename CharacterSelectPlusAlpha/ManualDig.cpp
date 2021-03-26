@@ -3,7 +3,7 @@
 
 namespace ManualDig
 {
-	constexpr int Dig_Start = 0x733934;
+	constexpr int Dig_Start = 0x733938;
 	constexpr int Dig_End = 0x733954;
 	int Dig;
 	void Dig_Detour()
@@ -21,7 +21,7 @@ namespace ManualDig
 #ifdef FIXUPS
 		Dig = Repair(new Trampoline(Dig_Start, Dig_End, Dig_Detour));
 #else
-		Dig = addr(new Trampoline(Dig_Start, Dig_Start + 9, Dig_Detour));
+		Dig = addr(new Trampoline(Dig_Start, Dig_Start + 5, Dig_Detour));
 #endif
 	}
 

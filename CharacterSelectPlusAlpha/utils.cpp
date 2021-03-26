@@ -47,6 +47,7 @@ int Repair(Trampoline* trampoline)
 			{
 				const auto operand = (int*)&instruction[1];
 				*operand += offset;
+				i += 4;
 			}
 		}
 
