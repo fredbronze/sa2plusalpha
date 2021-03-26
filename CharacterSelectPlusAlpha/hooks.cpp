@@ -1,8 +1,8 @@
 #include "SA2ModLoader.h"
 #include "IniFile.hpp"
-#include "AltFixes.h"
 #include "AltUpgrades.h"
 #include "ChaoMusic.h"
+#include "ChaosFixes.h"
 #include "CityEscapeMusic.h"
 #include "InGameDialogue.h"
 #include "LivesIcons.h"
@@ -18,8 +18,8 @@ extern "C"
 		const IniFile* settings = new IniFile(std::string(path) + "\\config.ini");
 
 		AltUpgrades::Init(settings->getInt("Gameplay", "AltUpgrades"));
-		AltFixes::Init(settings->getInt("Presentation", "AltFixes"));
 		ChaoMusic::Init(settings->getInt("Presentation", "ChaoMusic"));
+		ChaosFixes::Init(settings->getInt("Presentation", "ChaosFixes"));
 		CityEscapeMusic::Init(settings->getInt("Presentation", "CityEscapeMusic"));
 		InGameDialogue::Init(settings->getInt("Presentation", "InGameDialogue"));
 		LivesIcons::Init(settings->getInt("Presentation", "LivesIcons"), helperFunctions);

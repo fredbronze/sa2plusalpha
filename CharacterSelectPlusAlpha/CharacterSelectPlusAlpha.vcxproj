@@ -155,7 +155,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="AltFixes.h" />
+    <ClInclude Include="ChaosFixes.h" />
     <ClInclude Include="CityEscapeMusic.h" />
     <ClInclude Include="ChaoMusic.h" />
     <ClInclude Include="InGameDialogue.h" />
@@ -167,7 +167,7 @@
     <ClInclude Include="utils.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AltFixes.cpp" />
+    <ClCompile Include="ChaosFixes.cpp" />
     <ClCompile Include="CityEscapeMusic.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="ChaoMusic.cpp" />

@@ -13,8 +13,8 @@
 			</Property>
 		</Group>
 		<Group name="Presentation" display="Presentation">
-			<Property name="AltFixes" display="Better Chaos" type="OnOff">
-				<HelpText>Make Chaos 0 spawn glowy particle effects from his fists rather than his feet.</HelpText>
+			<Property name="ChaosFixes" display="Better Chaos" type="ChaosFixes">
+				<HelpText>Prevent Chaos 0's translucent shell from becoming detached from his body, and make particle effects spawn from his fists rather than his feet.</HelpText>
 			</Property>
 			<Property name="LivesIcons" display="Better Lives Icons" type="LivesIcons">
 				<HelpText>Replace the 2P character icons with AI upscales, and display 2P characters in 1-up boxes by loading a different texture (based on the HD GUI mod).</HelpText>
@@ -34,6 +34,12 @@
 		<Enum name="OnOff">
 			<EnumMember name="0" display="On" />
 			<EnumMember name="1" display="Off" />
+		</Enum>
+		<Enum name="ChaosFixes">
+			<EnumMember name="0" display="On" />
+			<EnumMember name="1" display="Only the shell" />
+			<EnumMember name="2" display="Only the effects" />
+			<EnumMember name="3" display="Off" />
 		</Enum>
 		<Enum name="CityEscapeMusic">
 			<EnumMember name="0" display="On" />

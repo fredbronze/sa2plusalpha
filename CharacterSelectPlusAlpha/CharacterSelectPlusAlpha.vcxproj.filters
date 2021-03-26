@@ -36,7 +36,7 @@
     <ClInclude Include="AltUpgrades.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="AltFixes.h">
+    <ClInclude Include="ChaosFixes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ManualDig.h">
@@ -71,7 +71,7 @@
     <ClCompile Include="AltUpgrades.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AltFixes.cpp">
+    <ClCompile Include="ChaosFixes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ManualDig.cpp">

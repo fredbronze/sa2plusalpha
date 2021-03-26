@@ -1,5 +1,5 @@
 #pragma once
-namespace AltFixes
+namespace ChaosFixes
 {
 	void Init(int setting);
 }
